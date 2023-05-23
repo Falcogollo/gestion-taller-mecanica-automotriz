@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registro de Trabajadores - Gestion Taller</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>  
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Gestion Taller</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">home</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="text-center">Registro de Trabajadores</h1>
+
+    <form id="workerForm">
+      <div class="form-group">
+        <label for="rut">Rut (si el rut termina en "k" remplazar por un "0"):</label>
+        <input type="number" class="form-control" id="rut" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Email">Correo Electronico:</label>
+        <input type="text" class="form-control "id="Email" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="contacto">Contacto Telefonico:</label>
+        <input type="number" class="form-control id="contacto" required>
+      </div> 
+
+      <div class="form-group">
+        <label for="position">Cargo:</label>
+        <input type="text" class="form-control" id="position" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="salary">Salario:</label>
+        <input type="number" class="form-control" id="salary" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+
+    <div id="workerList">
+      <!-- Aquí se mostrará la lista de trabajadores registrados -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

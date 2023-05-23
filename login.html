@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento de Auto</title>
+  <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Seguimiento de Auto en Taller Mecánico</h1>
+  
+  <form id="car-form">
+    <label for="car-model">Modelo:</label>
+    <input type="text" id="car-model" required>
+
+    <label for="car-make">Marca:</label>
+    <input type="text" id="car-make" required>
+
+    <label for="car-year">Año:</label>
+    <input type="number" id="car-year" required>
+
+    <button type="submit">Agregar Auto</button>
+  </form>
+
+  <table id="car-table">
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Marca</th>
+        <th>Año</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se añadirán las filas de los autos -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
