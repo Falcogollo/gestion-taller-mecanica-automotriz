@@ -1,0 +1,158 @@
+[1mdiff --git a/public/contacto.html b/public/contacto.html[m
+[1mindex e64c733..059b340 100644[m
+[1m--- a/public/contacto.html[m
+[1m+++ b/public/contacto.html[m
+[36m@@ -1,44 +1,29 @@[m
+ <!DOCTYPE html>[m
+ <html>[m
+ <head>[m
+[31m-  <title>Registro de Trabajadores - Taller Mecánico</title>[m
+[31m-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">[m
+[32m+[m[32m  <h1 class="titulo"> Contacto KND <span><img src="" alt=""></span></h1>[m
+[32m+[m[32m  <link rel="preload" href="css/styles.css" as="style">[m
+[32m+[m[32m  <link href="css/styles.css" rel="stylesheet">[m
+ </head>[m
+[31m-<body>[m
+[31m-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">[m
+[31m-    <a class="navbar-brand" href="#">Contactanos</a>[m
+[31m-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">[m
+[31m-      <span class="navbar-toggler-icon"></span>[m
+[31m-    </button>[m
+[31m-    <div class="collapse navbar-collapse" id="navbarNav">[m
+[31m-      <ul class="navbar-nav ml-auto">[m
+[31m-        <li class="nav-item">[m
+[31m-          <a class="nav-link" href="index.html">home</a>[m
+[31m-        </li>[m
+[31m-      </ul>[m
+[31m-    </div>[m
+[32m+[m[32m<div class="nav-bg">[m
+[32m+[m[32m  <nav class="navegacion-principal contenedor">[m
+[32m+[m[32m      <a href="index.html">Home</a>[m[41m            [m
+   </nav>[m
+[32m+[m[32m</div>[m
+[32m+[m[32m<body>[m
+ [m
+   <div class="container">[m
+[31m-   [m
+[31m-[m
+     <p>Puedes encontrarnos en nuestras redes sociales:</p>[m
+[31m-    <div class="text-center">[m
+[31m-      <a href="https://www.facebook.com/" target="_blank" class="btn btn-primary btn-lg">[m
+[31m-        <i class="fab fa-facebook-f"></i> Facebook[m
+[32m+[m[32m      <a href="https://www.facebook.com/" target="_blank" class="btn btn-primary">[m
+[32m+[m[32m        Facebook[m
+       </a>[m
+[31m-      <a href="https://twitter.com/" target="_blank" class="btn btn-info btn-lg">[m
+[31m-        <i class="fab fa-twitter"></i> Twitter[m
+[32m+[m[32m      <a href="https://twitter.com/" target="_blank" class="btn btn-info">[m
+[32m+[m[32m        Twitter[m
+       </a>[m
+[31m-      <a href="https://www.instagram.com/" target="_blank" class="btn btn-danger btn-lg">[m
+[31m-        <i class="fab fa-instagram"></i> Instagram[m
+[32m+[m[32m      <a href="https://www.instagram.com/" target="_blank" class="btn btn-danger">[m
+[32m+[m[32m        Instagram[m
+       </a>[m
+[31m-    </div>[m
+[32m+[m[41m    [m
+   </div>[m
+[31m-[m
+[31m-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>[m
+[31m-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>[m
+[31m-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>[m
+[31m-  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>[m
+ </body>[m
+ </html>[m
+[1mdiff --git a/public/css/styles.css b/public/css/styles.css[m
+[1mindex 3e2bdd5..4854201 100644[m
+[1m--- a/public/css/styles.css[m
+[1m+++ b/public/css/styles.css[m
+[36m@@ -468,4 +468,54 @@[m [mh1,h2,h3 {[m
+     justify-content: space-evenly;[m
+     align-items: center;[m
+     [m
+[32m+[m[32m}[m
+[32m+[m[32m.navbar {[m
+[32m+[m[32m  background-color: #0097A7;[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m  padding: 10px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.navbar-brand {[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.navbar-nav {[m
+[32m+[m[32m  margin-left: auto;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.navbar-nav .nav-link {[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  margin-left: 10px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.container {[m
+[32m+[m[32m  margin-top: 50px;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.container p {[m
+[32m+[m[32m  margin-bottom: 20px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.container .btn {[m
+[32m+[m[32m  margin: 5px;[m
+[32m+[m[32m  padding: 10px 20px;[m
+[32m+[m[32m  font-size: 16px;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m  border-radius: 5px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.container .btn-primary {[m
+[32m+[m[32m  background-color: #007bff;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.container .btn-info {[m
+[32m+[m[32m  background-color: #17a2b8;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.container .btn-danger {[m
+[32m+[m[32m  background-color: #dc3545;[m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/public/index.html b/public/index.html[m
+[1mindex 720e899..2aa6fe1 100644[m
+[1m--- a/public/index.html[m
+[1m+++ b/public/index.html[m
+[36m@@ -54,7 +54,6 @@[m
+             <a href="index.html">Inicio</a>[m
+             <a href="sobreMi.html">Conocenos</a>[m
+             <a href="contacto.html">Contacto</a>[m
+[31m-            <a href="registroTrabajadores.html">RegistroTrabajador</a>[m
+         </nav>[m
+     </div>[m
+     [m
+[1mdiff --git a/public/sobreMi.html b/public/sobreMi.html[m
+[1mindex 3c121be..5e0d26d 100644[m
+[1m--- a/public/sobreMi.html[m
+[1m+++ b/public/sobreMi.html[m
+[36m@@ -14,7 +14,7 @@[m
+     </header>[m
+     <div class="nav-bg">[m
+         <nav class="navegacion-principal contenedor">[m
+[31m-            <a href="index.html">home</a>            [m
+[32m+[m[32m            <a href="index.html">Home</a>[m[41m            [m
+         </nav>[m
+     </div>[m
+ [m
+[36m@@ -23,7 +23,7 @@[m
+           <h3>Somos un equipo de apasionados desarrolladores web dedicados a brindar soluciones digitales.</h3>[m
+         </div>[m
+       </section>[m
+[31m-        <div class="descripcion-desarrollador">[m
+[32m+[m[32m        <div class="container">[m
+         <p>Somos un equipo de desarrollo enfocado en soluciones informáticas a través de una página web de gestión de información. [m
+             Nos especializamos en diseñar interfaces intuitivas y eficientes para simplificar la gestión de datos. [m
+             Nuestra meta es brindarte una solución informática sólida y a medida que optimice tus procesos y mejore la productividad. [m

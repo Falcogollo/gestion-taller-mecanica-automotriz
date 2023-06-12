@@ -469,3 +469,53 @@ h1,h2,h3 {
     align-items: center;
     
 }
+.navbar {
+  background-color: #0097A7;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container p {
+  margin-bottom: 20px;
+}
+
+.container .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.container .btn-primary {
+  background-color: #007bff;
+}
+
+.container .btn-info {
+  background-color: #17a2b8;
+}
+
+.container .btn-danger {
+  background-color: #dc3545;
+}
