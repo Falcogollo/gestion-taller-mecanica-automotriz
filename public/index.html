@@ -14,9 +14,7 @@
     <header>
         <h1 class="titulo"> Gestión Taller</h1>
     </header>
-    <Div class="botonlogin">
-        <button class="login" onclick="document.getElementById('id01').style.display='block'">Ingresar</button>
-    </Div>
+    
 
 <!-- The Modal -->
     <div id="id01" class="modal">
@@ -34,9 +32,9 @@
             <input type="text" placeholder="Ingrese Nombre de usuario" name="uname" required>
 
             <label for="psw"><b>Contraseña</b></label>
-            <input type="password" placeholder="Ingrese contraseña" name="psw" required>
+            <input type="password" placeholder="Ingrese contraseña" name="psw"required >
 
-            <button type="submit">Ingresar</button>
+            <a href="vistaWelcome.html">Ingresar</a>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Recuerdame
             </label>
@@ -54,7 +52,7 @@
             <a href="index.html">Inicio</a>
             <a href="sobreMi.html">Conocenos</a>
             <a href="contacto.html">Contacto</a>
-            <a href="vista.html">Sidebar</a>
+            <button class="login" onclick="document.getElementById('id01').style.display='block'">Ingresar</a>
         </nav>
     </div>
     
