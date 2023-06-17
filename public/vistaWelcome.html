@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bienvenida - Portal de Administrador</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 40px;
+    }
+
+    .accion {
+      border: none;
+      border-radius: 4px;
+      padding: 20px;
+      margin: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .accion:hover {
+      transform: scale(1.05);
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Bienvenida</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Cerrar Sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <h1>Bienvenido, Administrador</h1>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-3">
+        <a href="vista.html" class="card-link">
+          <div class="card accion bg-primary text-white">
+            <div class="card-body">
+              <h2 class="card-title">Crear Órdenes de Trabajo</h2>
+              <p class="card-text">Aquí puedes crear nuevas órdenes de trabajo para los empleados.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="#" class="card-link">
+          <div class="card accion bg-warning text-white">
+            <div class="card-body">
+              <h2 class="card-title">Seguimiento de Procesos</h2>
+              <p class="card-text">Realiza el seguimiento y monitoreo de los procesos en curso.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="#" class="card-link">
+          <div class="card accion bg-info text-white">
+            <div class="card-body">
+              <h2 class="card-title">Información de los Trabajadores</h2>
+              <p class="card-text">Accede a la información de los trabajadores de la empresa.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="#" class="card-link">
+          <div class="card accion bg-secondary text-white">
+            <div class="card-body">
+              <h2 class="card-title">Agregar un Trabajador Nuevo</h2>
+              <p class="card-text">Añade un nuevo empleado al sistema de la empresa.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
