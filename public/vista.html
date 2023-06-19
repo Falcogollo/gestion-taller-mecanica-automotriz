@@ -31,7 +31,7 @@
 
       <div class="col-md-8">
         <h2 class="mt-3">Crear orden de trabajo</h2>
-        <form action="guardar_orden.php" method="POST" onsubmit="return guardarOrden()">
+        <form action="guardar.php" method="POST">
           <div class="form-group">
             <label for="idOrden">ID de Orden:</label>
             <input type="text" id="idOrden" name="idOrden" class="form-control" required>
@@ -54,7 +54,7 @@
 
           <div class="form-group">
             <label for="trabajadorAsignado">Trabajador Asignado:</label>
-            <select id="trabajadorAsignado" name="trabajadorAsignado" class="form-control" required>
+            <select id="trabajadorAsignado" name="trabajadorAsignado" class="form-control" >
               <option value="">Seleccionar Trabajador</option>
               <option value="Trabajador 1">Trabajador 1</option>
               <option value="Trabajador 2">Trabajador 2</option>
@@ -64,17 +64,17 @@
 
           <div class="form-group">
             <label for="clienteId">ID de Cliente:</label>
-            <input type="text" id="clienteId" name="clienteId" class="form-control" required>
+            <input type="text" id="clienteId" name="clienteId" class="form-control" >
           </div>
 
           <div class="form-group">
             <label for="patente">Patente:</label>
-            <input type="text" id="patente" name="patente" class="form-control" required>
+            <input type="text" id="patente" name="patente" class="form-control" >
           </div>
 
           <div class="form-group">
             <label for="idProducto">ID de Producto:</label>
-            <input type="text" id="idProducto" name="idProducto" class="form-control" required>
+            <input type="text" id="idProducto" name="idProducto" class="form-control" >
           </div>
 
           <div class="form-group">
@@ -129,6 +129,7 @@
     function guardarOrden() {
       // Aquí puedes agregar la lógica para guardar la orden en el servidor
 
+
       // Actualizar la lista de órdenes en el sidebar
       var idOrden = document.getElementById('idOrden').value;
       var ordenList = document.getElementById('orden-list');
@@ -142,10 +143,10 @@
       document.getElementById('fechaCreacion').value = '';
       document.getElementById('fechaActual').value = '';
       document.getElementById('fechaEstimada').value = '';
-      document.getElementById('trabajadorAsignado').value = '';
-      document.getElementById('clienteId').value = '';
-      document.getElementById('patente').value = '';
-      document.getElementById('idProducto').value = '';
+     // document.getElementById('trabajadorAsignado').value = '';
+      //document.getElementById('clienteId').value = '';
+     // document.getElementById('patente').value = '';
+     // document.getElementById('idProducto').value = '';
       document.getElementById('descripcion').value = '';
       document.getElementById('estadoProceso').value = '';
 
