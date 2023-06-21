@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost";
-$user = "root";
-$clave = "";
-$bd = "taller";
+$user = "KNDADMIN";
+$clave = "KND.1029384756";
+$bd = "tallergestion";
 
 
 
