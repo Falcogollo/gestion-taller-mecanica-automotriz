@@ -263,7 +263,7 @@ mysqli_close($link);
                             <span class="invalid-feedback"><?php echo $rut_err; ?></span>
                         </div>
                         <input type="submit" class="btn btn-primary" value="Ingresar">
-                        <a href="index.php" class="btn btn-secondary ml-2">Volver</a>
+                        <a href="vista.php" class="btn btn-secondary ml-2">Volver</a>
                     </form>
                 </div>
             </div>        

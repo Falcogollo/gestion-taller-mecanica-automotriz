@@ -167,7 +167,7 @@ if(isset($_POST["id_orden_trabajo"]) && ! empty($_POST["id_orden_trabajo"])){
                     </div>
                     <input type="hidden" name="id" value="<?php echo $id; ?>"/>
                     <input type="submit" class="btn btn-primary" value="Actualizar">
-                    <a href="index.php" class="btn btn-secondary ml-2">Volver</a>
+                    <a href="vista.php" class="btn btn-secondary ml-2">Volver</a>
                 </form>
             </div>
         </div>

@@ -65,7 +65,7 @@ if(isset($_POST["id_orden_trabajo"]) && !empty($_POST["id_orden_trabajo"])){
                             <p>¿esta seguro desea eliminar el registro?</p>
                             <p>
                                 <input type="submit" value="Yes" class="btn btn-danger">
-                                <a href="index.php" class="btn btn-secondary">No</a>
+                                <a href="vista.php" class="btn btn-secondary">No</a>
                             </p>
                         </div>
                     </form>

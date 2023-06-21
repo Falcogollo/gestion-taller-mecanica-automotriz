@@ -63,7 +63,7 @@ if(isset($_GET["id_orden_trabajo"]) && !empty(trim($_GET["id_orden_trabajo"]))){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>View Record</title>
+    <title>orden de trabajo</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .wrapper{
@@ -77,7 +77,7 @@ if(isset($_GET["id_orden_trabajo"]) && !empty(trim($_GET["id_orden_trabajo"]))){
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="mt-5 mb-3">View Record</h1>
+                    <h1 class="mt-5 mb-3">Ordenes de trabajo</h1>
                     <div class="form-group">
                         <label>Id orden trabajo</label>
                         <p><b><?php echo $row["id_orden_trabajo"]; ?></b></p>
@@ -114,7 +114,7 @@ if(isset($_GET["id_orden_trabajo"]) && !empty(trim($_GET["id_orden_trabajo"]))){
                         <label>Trabajador</label>
                         <p><b><?php echo $row["fkrut"]; ?></b></p>
                     </div>
-                    <p><a href="index.php" class="btn btn-primary">Volver</a></p>
+                    <p><a href="vista.php" class="btn btn-primary">Volver</a></p>
                 </div>
             </div>        
         </div>
