@@ -22,7 +22,7 @@
         margin-bottom: 10px; /* Ajusta el margen inferior según tus necesidades */
     }
     .nav-bg {
-        background-image: url('public/img/fondo.jpg'); /* Ruta de la imagen de fondo */
+       /* background-image: url('public/img/fondo.jpg'); /* Ruta de la imagen de fondo */
         background-repeat: no-repeat;
         background-size: cover;
     }

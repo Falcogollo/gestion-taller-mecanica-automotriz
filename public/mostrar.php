@@ -19,7 +19,7 @@ $select ="select * from orden_de_trabajo";
 
 
 if (mysqli_query($conectar, $select)) {
-    header('Location: vista.html');
+    header('Location: vista.php');
     //crear advertencia
     exit();
 } else {

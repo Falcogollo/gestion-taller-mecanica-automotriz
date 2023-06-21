@@ -24,7 +24,7 @@ $insertar = "INSERT INTO orden_de_trabajo(id_orden_trabajo,fecha_creacion,fecha_
 //$query = mysqli_query($conectar,$insertar);
 
 if (mysqli_query($conectar, $insertar)) {
-    header('Location: vista.html');
+    header('Location: vista.php');
     //crear advertencia
     exit();
 } else {

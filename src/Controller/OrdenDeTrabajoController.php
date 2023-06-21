@@ -22,6 +22,6 @@ class OrdenDeTrabajoController extends AbstractController
     {
         $em =$this -> getDoctrine() -> getManager();
         $listOrden = $em -> getRepository('App:orden_de_trabajo') -> findBy([],['id_orden_trabajo']);
-        return $this ->render('')
+
     }
 }

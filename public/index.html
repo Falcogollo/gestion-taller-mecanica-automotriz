@@ -11,23 +11,25 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="titulo"> Gestión Taller</h1>
-    </header>
-    
+<header>
+    <h1 class="titulo"> Gestión Taller</h1>
+    <button class="login" onclick="document.getElementById('id01').style.display='block'">Ingresar</a>
+</header>
+
 
 <!-- The Modal -->
-    <div id="id01" class="modal">
+<div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'"
-        class="close" title="Close Modal">&times;</span>
+              class="close" title="Close Modal">&times;</span>
 
     <!-- Modal Content -->
-        <form class="modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-            <img src="image.png.png" alt="Avatar" class="avatar">
-            </div>
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <img src="img/man.png" alt="Avatar" class="avatar" aria-posinset="stroke-linecap">
 
-            <div class="container">
+        </div>
+
+        <div class="container">
             <label for="uname"><b>Nombre De Usuario</b></label>
             <input type="text" placeholder="Ingrese Nombre de usuario" name="uname" required>
 
@@ -38,127 +40,247 @@
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Recuerdame
             </label>
-            </div>
+        </div>
 
-            <div class="container" style="background-color:#f1f1f1">
+        <div class="container" style="background-color:#f1f1f1">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Atras</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </form>
+        </div>
+    </form>
+</div>
+
+<div class="nav-bg">
+
+    <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="sobreMi.html">Conocenos</a>
+        <a href="contacto.html">Contacto</a>
+
+    </nav>
+    <div class="navbar">
+        <!-- Contenido de la barra de navegación -->
     </div>
 
-    <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-            <a href="index.html">Inicio</a>
-            <a href="sobreMi.html">Conocenos</a>
-            <a href="contacto.html">Contacto</a>
-            <button class="login" onclick="document.getElementById('id01').style.display='block'">Ingresar</a>
-        </nav>
-    </div>
-    
-    <section class="hero">
-        <div class="contenido-hero">
-            <h2>Taller <span> Mecánico</span></h2> 
-            <div class="ubicacion">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z"/>
-                    <circle cx="12" cy="11" r="3" />
-                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+    <button class="login">Login</button>
+</div>
+
+<section class="hero">
+    <div class="contenido-hero">
+        <h2>Taller <span> Mecánico</span></h2>
+        <div class="ubicacion">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"/>
+                <circle cx="12" cy="11" r="3" />
+                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+            </svg>
+            <p>Chillán, Chile</p>
+        </div>
+        <a class="boton" href="#">Contactar</a>
+    </div> <!-- .contenido-hero -->
+</section>
+
+<main class="contenedor sombra">
+    <h2>Mis Servicios</h2>
+
+    <div class="servicios">
+        <section class="servicio">
+            <h3>Desarrollo y Gestión Web</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z"></path>
+                    <path d="M4 8h16"></path>
+                    <path d="M8 4v4"></path>
+                    <path d="M10 14h4"></path>
+                    <path d="M12 12v4"></path>
                 </svg>
-                <p>Chillán, Chile</p>
             </div>
-            <a class="boton" href="#">Contactar</a>
-        </div> <!-- .contenido-hero --> 
-    </section>
-    
-    <main class="contenedor sombra">
-        <h2>Mis Servicios</h2>
-
-        <div class="servicios">
-            <section class="servicio">
-                <h3>Desarrollo y Gestión Web</h3>
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-browser-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z"></path>
-                        <path d="M4 8h16"></path>
-                        <path d="M8 4v4"></path>
-                        <path d="M10 14h4"></path>
-                        <path d="M12 12v4"></path>
-                     </svg>
-                </div>
-                <p> Software completo y eficiente para administrar tu taller con facilidad. Suscripción flexible. Ahorra tiempo y optimiza tus procesos. </p>
-            </section>
-        
-            <section class="servicio">
-                <h3>Soporte</h3>
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-24-hours" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4"></path>
-                        <path d="M4 13a8.094 8.094 0 0 0 3 5.24"></path>
-                        <path d="M11 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2"></path>
-                        <path d="M17 15v2a1 1 0 0 0 1 1h1"></path>
-                        <path d="M20 15v6"></path>
-                     </svg>
-                </div>
-                <p> Brindar soporte a la pagina web para el correcto funcionamiento. </p>
-            </section>
-
-            <section class="servicio">
-                <h3>Capacitación</h3>
-                <div class="iconos">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
-                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
-                        <path d="M15 19l2 2l4 -4"></path>
-                     </svg>
-                </div>
-                <p> Nuestra labor es entregar el servicio completo, por ende al subcribirse en nuestro servicios otorgamos una Capacitacion para el correcto funcionamiento de la pagina Web. </p>
-            </section>
-        </div> <!--.servicios-->
-    
-        <section>
-            <h2>Contacto</h2>
-
-            <form class="formulario">
-                <fieldset>
-                    <legend>Contactános llenando todos los campos</legend>
-
-                    <div class="contenedor-campos">
-                        <div class="campo">
-                            <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
-                        </div>
-
-                        <div class="campo">
-                            <label>Teléfono</label>
-                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
-                        </div>
-
-                        <div class="campo">
-                            <label>Correo</label>
-                            <input class="input-text" type="email" placeholder="Tu Email">
-                        </div>
-                
-                        <div class="campo">
-                            <label>Mensaje</label>
-                            <textarea class="input-text"></textarea>
-                        </div>
-                    </div> <!-- .contenedor-campos -->
-
-                    <div class="alinear-derecha flex">
-                        <input class="boton w-sm-100" type="submit" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
+            <p> Software completo y eficiente para administrar tu taller con facilidad. Suscripción flexible. Ahorra tiempo y optimiza tus procesos. </p>
         </section>
 
-    </main>
-    
+        <section class="servicio">
+            <h3>Soporte</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-24-hours" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4"></path>
+                    <path d="M4 13a8.094 8.094 0 0 0 3 5.24"></path>
+                    <path d="M11 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2"></path>
+                    <path d="M17 15v2a1 1 0 0 0 1 1h1"></path>
+                    <path d="M20 15v6"></path>
+                </svg>
+            </div>
+            <p> Brindar soporte a la pagina web para el correcto funcionamiento. </p>
+        </section>
+
+        <section class="servicio">
+            <h3>Capacitación</h3>
+            <div class="iconos">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-check" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
+                    <path d="M15 19l2 2l4 -4"></path>
+                </svg>
+            </div>
+            <p> Nuestra labor es entregar el servicio completo, por ende al subcribirse en nuestro servicios otorgamos una Capacitacion para el correcto funcionamiento de la pagina Web. </p>
+        </section>
+    </div> <!--.servicios-->
+
+    <section>
+        <h2>Contacto</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Contactános llenando todos los campos</legend>
+
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Tu Nombre">
+                    </div>
+
+                    <div class="campo">
+                        <label>Teléfono</label>
+                        <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                    </div>
+
+                    <div class="campo">
+                        <label>Correo</label>
+                        <input class="input-text" type="email" placeholder="Tu Email">
+                    </div>
+
+                    <div class="campo">
+                        <label>Mensaje</label>
+                        <textarea class="input-text"></textarea>
+                    </div>
+                </div> <!-- .contenedor-campos -->
+
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+</main>
+
+<style>
+    .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .footer a {
+        color: #fff;
+    }
+
+    .footer a:hover {
+        color: #ccc;
+        text-decoration: none;
+    }
+
+    .footer-logo {
+        max-width: 150px;
+    }
+
+    .footer-logo img {
+        width: auto;
+        max-height: 50px;
+    }
+
+    .footer p {
+        margin-bottom: 0;
+    }
+
+    .social-icons {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0;
+        padding: 0;
+    }
+
+    .social-icons li {
+        margin-right: 10px;
+    }
+
+    .social-icons li:last-child {
+        margin-right: 0;
+    }
+
+    .social-icons a {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #555;
+    }
+
+    .social-icons img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-content .footer-logo {
+        margin-right: 20px;
+    }
+
+    .rights {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+
+<footer class="footer">
     <footer class="footer">
-        <p>Todos los derechos reservados<p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <img src="img/footer logos/inicial_logo.png" alt="Logo Gestion Taller">
+                        </div>
+                        <p class="slogan">Gestión Taller Mecánico</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h4>Información de contacto</h4>
+                    <ul class="contacto">
+                        <li><i class="fas fa-map-marker-alt"></i> Dirección: Chillán, Chile</li>
+                        <li><i class="fas fa-phone"></i> Teléfono: +123456789</li>
+                        <li><i class="fas fa-envelope"></i> Correo: info@gestiontaller.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h4>Síguenos en las redes sociales</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank">
+                            <img src="img/footer logos/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="img/footer logos/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="img/footer logos/instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            <p>Todos los derechos reservados &copy; 2023</p>
+        </div>
     </footer>
+</footer>
 
 
 
