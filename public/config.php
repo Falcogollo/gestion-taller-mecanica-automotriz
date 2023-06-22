@@ -1,8 +1,8 @@
 <?php
 
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'KNDADMIN');
-define('DB_PASSWORD', 'KND.1029384756');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
 define('DB_NAME', 'tallergestion');
 
 /* Attempt to connect to MySQL database */

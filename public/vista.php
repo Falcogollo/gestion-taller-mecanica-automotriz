@@ -59,7 +59,7 @@
         <div class="col-md-8">
 
             <h2 class="pull-left"> ordenes de trabajo</h2>
-            <a href="create.php" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Agregar </a>
+            <a href="Create.php" class="btn btn-primary pull-right"><i class="fa fa-plus"></i> Agregar </a>
 
 
 
